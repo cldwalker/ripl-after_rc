@@ -9,7 +9,7 @@ Gem::Specification.new do |s|
   s.email       = "gabriel.horner@gmail.com"
   s.homepage    = "http://github.com/cldwalker/after_rc"
   s.summary = "A ripl plugin to define blocks to run after ~/.irbrc"
-  s.description =  "DESCRIPTION"
+  s.description =  "This ripl plugin provides a simple way to define blocks which are run after ~/.irbrc is loaded. A more useful version of IRB.conf[:IRB_RC]."
   s.required_rubygems_version = ">= 1.3.6"
   s.rubyforge_project = 'tagaholic'
   s.add_dependency 'ripl', '>= 0.2.0'
