@@ -22,4 +22,5 @@ module Ripl
     end
   end
 end
-Ripl::Shell.send :include, Ripl::AfterRc
+
+Ripl::Shell.send :include, Ripl::AfterRc if defined? Ripl::Shell

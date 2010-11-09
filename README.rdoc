@@ -16,12 +16,13 @@ Add to your ~/.riplrc
 Anywhere in your ~/.irbrc
 
     Ripl.after_rc do
-      # some code to run ~/.irbrc
+      # some code to run after ~/.irbrc
     end
 
 You can call Ripl.after_rc as many times as you'd like and the blocks
 will be called later in the order they were defined.
 
 == Motivation
-So why use this at all? Say you have some Rails helpers to define but Rails doesn't get
-loaded until after irbrc. Simply pass Ripl.after_rc a block to be called when Rails is available.
+So why use this at all? Say you have some Rails helpers to define but Rails doesn't get loaded until
+later in the irbrc or after irbrc. Simply pass Ripl.after_rc a block and it will be called later
+when Rails is available.
