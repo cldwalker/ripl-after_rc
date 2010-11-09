@@ -1,5 +1,7 @@
 module Ripl
   module AfterRc
+    VERSION = '0.1.0'
+
     def self.included(mod)
       Ripl.extend ClassMethods
     end

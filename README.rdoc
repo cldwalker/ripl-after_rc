@@ -1,0 +1,27 @@
+== Description
+This ripl plugin provides a simple way to define blocks which are
+run after ~/.irbrc is loaded. A more useful version of IRB.conf[:IRB_RC].
+
+== Install
+Install the gem with:
+
+    sudo gem install ripl-after_rc
+
+== Usage
+
+Add to your ~/.riplrc
+
+    require 'ripl/after_rc'
+
+Anywhere in your ~/.irbrc
+
+    Ripl.after_rc do
+      # some code to run ~/.irbrc
+    end
+
+You can call Ripl.after_rc as many times as you'd like and the blocks
+will be called later in the order they were defined.
+
+== Motivation
+So why use this at all? Say you have some Rails helpers to define but Rails doesn't get
+loaded until after irbrc. Simply pass Ripl.after_rc a block to be called when Rails is available.
